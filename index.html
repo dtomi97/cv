@@ -143,7 +143,12 @@ footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-s
     <aside class="side">
       <div class="photo" id="photo">
         <img id="photoImg" alt="Portrait of László Tímea" hidden>
-        <div class="empty" id="photoEmpty"></div>
+        <div class="empty" id="photoEmpty">No photo yet.<br>Choose an image to add one.</div>
+      </div>
+      <div class="photo-actions">
+        <button class="btn" id="upBtn" type="button">Upload photo</button>
+        <button class="btn ghost" id="rmBtn" type="button" hidden>Remove</button>
+        <input type="file" id="file" accept="image/*" hidden>
       </div>
 
       <h3>Contact</h3>
@@ -338,6 +343,7 @@ const HU={
 "Open to new projects from January":"Januártól nyitott új projektekre",
 "Environmental engineer turning water, soil and energy data into cleaner decisions.":"Környezetmérnök, aki víz-, talaj- és energiaadatokból tisztább döntéseket formál.",
 "CV":"Önéletrajz","Motivation letter":"Motivációs levél","Additional info":"További információk",
+"No photo yet.":"Még nincs fotó.","Choose an image to add one.":"Tölts fel egy képet.",
 "Upload photo":"Fotó feltöltése","Remove":"Törlés",
 "Contact":"Kapcsolat","Gothenburg, Sweden":"Göteborg, Svédország",
 "Core skills":"Fő készségek","Life-cycle assessment":"Életciklus-elemzés","Hydrological modelling":"Hidrológiai modellezés","GIS & remote sensing":"GIS és távérzékelés",
